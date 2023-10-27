@@ -1,0 +1,20 @@
+header nav {
+  background: var(--color-background);
+  box-shadow: var(--box-shadow-medium);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 10;
+}
+header > div {
+  background: #EAEAEA;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+header section {
+  gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/*# sourceMappingURL=home.css.map */

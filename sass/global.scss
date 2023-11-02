@@ -6,9 +6,13 @@
     --color-secondary: #FF79DA;
     --color-tertiary: #99E2D0;
 
-    --box-shadow-small: 0 0 4px 1px rgba(0, 0, 0, 0.1);
-    --box-shadow-medium: 0 0 5px 2px rgba(0, 0, 0, 0.1);
-    --box-shadow-big: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+    --box-shadow-small: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    --box-shadow-medium: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    --box-shadow-big: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+    --big-radius: 25px;
+    --medium-radius: 20px;
+    --small-radius: 15px;
 }
 
 * {
@@ -76,10 +80,6 @@ body {
     text-align: center;
 }
 
-.flex {
-    display: flex;
-}
-
 .column {
     flex-direction: column;
 }
@@ -90,11 +90,6 @@ body {
 
 .justify-center {
     justify-content: center;
-}
-
-.h-padding {
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .btn {
@@ -110,4 +105,8 @@ body {
         background-color: #fc91dd;
         box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.2);
     }
+}
+
+.like {
+    background-color: transparent;
 }

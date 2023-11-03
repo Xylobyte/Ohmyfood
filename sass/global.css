@@ -33,7 +33,6 @@ button, a, .pointer {
 
 body {
   background: var(--color-gray-background);
-  width: 100vw;
   min-height: 100vh;
 }
 
@@ -105,6 +104,24 @@ body {
 
 .like {
   background-color: transparent;
+  position: relative;
+}
+.like svg {
+  transition: opacity 100ms;
+}
+.like .liked {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.like:hover .liked {
+  opacity: 1;
+}
+.like:hover .no-liked {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=global.css.map */

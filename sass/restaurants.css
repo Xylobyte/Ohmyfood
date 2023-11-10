@@ -39,7 +39,7 @@ main section article {
   overflow: hidden;
   cursor: pointer;
   gap: 10px;
-  height: 80px;
+  height: 70px;
 }
 main section article p, main section article h4, main section article .content {
   text-overflow: ellipsis;
@@ -59,6 +59,7 @@ main section article span {
   padding: 15px 15px 15px 0;
   height: 100%;
   display: flex;
+  font-size: 15px;
   align-items: end;
 }
 main section article .check {

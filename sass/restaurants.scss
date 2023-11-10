@@ -44,7 +44,7 @@ main {
             overflow: hidden;
             cursor: pointer;
             gap: 10px;
-            height: 80px;
+            height: 70px;
 
             p, h4, .content {
                 text-overflow: ellipsis;
@@ -67,6 +67,7 @@ main {
                 padding: 15px 15px 15px 0;
                 height: 100%;
                 display: flex;
+                font-size: 15px;
                 align-items: end;
             }
 

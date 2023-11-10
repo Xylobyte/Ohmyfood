@@ -1,11 +1,4 @@
 header {
-    nav {
-        background: var(--color-background);
-        box-shadow: var(--box-shadow-medium);
-        padding: 15px 20px;
-        z-index: 10;
-    }
-
     > div {
         background: #EAEAEA;
         padding: 15px 20px;
@@ -65,6 +58,7 @@ main {
     border-radius: var(--small-radius);
     box-shadow: var(--box-shadow-small);
     background-color: var(--color-background);
+    text-decoration: none;
 
     img {
         width: 100%;
@@ -78,34 +72,6 @@ main {
 
         > div {
             gap: 8px;
-        }
-    }
-}
-
-footer {
-    background: #353535;
-    padding: 20px;
-    color: white;
-    gap: 20px;
-
-    nav {
-        gap: 12px;
-
-        svg {
-            width: 14px;
-            height: 14px;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        > div {
-            gap: 12px;
-
-            > div {
-                gap: 8px;
-            }
         }
     }
 }

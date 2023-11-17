@@ -8,40 +8,64 @@ header {
     section {
         gap: 30px;
         padding: 40px 20px;
+
+        @media (min-width: 1000px) {
+            gap: 40px;
+        }
     }
 }
 
 #function {
+    flex-direction: column;
     background: var(--color-background);
-    padding: 40px 20px;
-    gap: 25px;
 
-    > div {
-        margin-left: 10px;
-        border-radius: var(--medium-radius);
-        box-shadow: var(--box-shadow-big);
-        padding: 25px 30px;
-        background-color: var(--color-gray-background);
-        position: relative;
-        gap: 15px;
+    section {
+        padding: 40px 20px;
+        gap: 25px;
+        max-width: 1300px;
+        align-self: center;
+        width: 100%;
 
-        span {
-            font-size: 14px;
-            position: absolute;
-            left: 0;
-            transform: translateX(-50%);
-            background-color: var(--color-primary);
-            color: white;
-            border-radius: var(--big-radius);
-            width: 25px;
-            height: 25px;
-            text-align: center;
-            line-height: 26px;
+        @media (min-width: 1000px) {
+            flex-direction: row !important;
+            flex-wrap: wrap;
+
+            h2 {
+                width: 100%;
+            }
+
+            > div {
+                width: 30.5%;
+            }
         }
 
-        &:last-child {
-            svg {
-                color: var(--color-primary);
+        > div {
+            margin-left: 10px;
+            border-radius: var(--medium-radius);
+            box-shadow: var(--box-shadow-big);
+            padding: 25px 30px;
+            background-color: var(--color-gray-background);
+            position: relative;
+            gap: 15px;
+
+            span {
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+                transform: translateX(-50%);
+                background-color: var(--color-primary);
+                color: white;
+                border-radius: var(--big-radius);
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                line-height: 26px;
+            }
+
+            &:last-child {
+                svg {
+                    color: var(--color-primary);
+                }
             }
         }
     }
@@ -50,6 +74,20 @@ header {
 main {
     padding: 40px 20px;
     gap: 20px;
+    max-width: 1300px;
+    align-self: center;
+    width: 100%;
+
+    @media (min-width: 1000px) {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+
+        h2 {
+            width: 100%;
+        }
+    }
 }
 
 .card {
@@ -59,6 +97,10 @@ main {
     box-shadow: var(--box-shadow-small);
     background-color: var(--color-background);
     text-decoration: none;
+
+    @media (min-width: 1000px) {
+        width: 47.5%;
+    }
 
     img {
         width: 100%;

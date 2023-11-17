@@ -30,6 +30,11 @@ header nav {
   z-index: 10;
   position: relative;
 }
+@media (min-width: 1000px) {
+  header nav {
+    padding: 20px 20px;
+  }
+}
 header nav a {
   position: absolute;
   left: 15px;
@@ -46,6 +51,7 @@ button, a, .pointer {
 body {
   background: var(--color-gray-background);
   min-height: 100vh;
+  display: flex;
 }
 
 .title {
@@ -140,11 +146,24 @@ body {
 footer {
   background: #353535;
   padding: 20px;
-  color: white;
+  color: #ffffff;
   gap: 20px;
+}
+@media (min-width: 700px) {
+  footer {
+    flex-direction: row-reverse !important;
+    gap: 60px;
+    padding: 70px 30px 30px;
+  }
 }
 footer nav {
   gap: 12px;
+}
+@media (min-width: 700px) {
+  footer nav {
+    flex-direction: row !important;
+    gap: 30px;
+  }
 }
 footer nav svg {
   width: 14px;
@@ -155,6 +174,12 @@ footer nav a {
 }
 footer nav > div {
   gap: 12px;
+}
+@media (min-width: 900px) {
+  footer nav > div {
+    flex-direction: row !important;
+    align-items: center;
+  }
 }
 footer nav > div > div {
   gap: 8px;

@@ -7,13 +7,36 @@ header section {
   gap: 30px;
   padding: 40px 20px;
 }
+@media (min-width: 1000px) {
+  header section {
+    gap: 40px;
+  }
+}
 
 #function {
+  flex-direction: column;
   background: var(--color-background);
+}
+#function section {
   padding: 40px 20px;
   gap: 25px;
+  max-width: 1300px;
+  align-self: center;
+  width: 100%;
 }
-#function > div {
+@media (min-width: 1000px) {
+  #function section {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  #function section h2 {
+    width: 100%;
+  }
+  #function section > div {
+    width: 30.5%;
+  }
+}
+#function section > div {
   margin-left: 10px;
   border-radius: var(--medium-radius);
   box-shadow: var(--box-shadow-big);
@@ -22,7 +45,7 @@ header section {
   position: relative;
   gap: 15px;
 }
-#function > div span {
+#function section > div span {
   font-size: 14px;
   position: absolute;
   left: 0;
@@ -35,13 +58,27 @@ header section {
   text-align: center;
   line-height: 26px;
 }
-#function > div:last-child svg {
+#function section > div:last-child svg {
   color: var(--color-primary);
 }
 
 main {
   padding: 40px 20px;
   gap: 20px;
+  max-width: 1300px;
+  align-self: center;
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  main {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  main h2 {
+    width: 100%;
+  }
 }
 
 .card {
@@ -51,6 +88,11 @@ main {
   box-shadow: var(--box-shadow-small);
   background-color: var(--color-background);
   text-decoration: none;
+}
+@media (min-width: 1000px) {
+  .card {
+    width: 47.5%;
+  }
 }
 .card img {
   width: 100%;

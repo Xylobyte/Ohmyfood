@@ -13,6 +13,43 @@ header section {
   }
 }
 
+.loader {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 30;
+  animation: fadeOut 0.4s linear forwards;
+  animation-delay: 3.1s;
+}
+.loader h1 {
+  position: relative;
+}
+.loader h1:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 1px;
+  height: 3px;
+  width: 0;
+  display: block;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  animation: 3s lineGrow linear forwards;
+}
+@keyframes lineGrow {
+  to {
+    width: 100%;
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
 #function {
   flex-direction: column;
   background: var(--color-background);

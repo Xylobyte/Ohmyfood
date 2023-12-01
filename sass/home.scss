@@ -29,22 +29,34 @@ header {
 
     h1 {
         position: relative;
+        animation: slideToUp 0.4s linear forwards;
+        animation-delay: 3.1s;
     }
 
     h1:after {
         content: '';
         z-index: -1;
         position: absolute;
-        bottom: 1px;
+        bottom: -6px;
         height: 3px;
         width: 0;
         display: block;
         background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-        animation: 3s lineGrow linear forwards;
+        animation: 3.5s lineGrow linear forwards;
     }
 
-    @keyframes lineGrow {
+    @keyframes slideToUp {
         to {
+            transform: translateY(-50vh);
+        }
+    }
+    @keyframes lineGrow {
+        90% {
+            width: 100%;
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
             width: 100%;
         }
     }

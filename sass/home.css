@@ -49,10 +49,8 @@ header section {
 @keyframes lineGrow {
   90% {
     width: 100%;
-    opacity: 1;
   }
   100% {
-    opacity: 0;
     width: 100%;
   }
 }

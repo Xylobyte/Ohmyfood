@@ -126,7 +126,7 @@ body {
   position: relative;
 }
 .like svg {
-  transition: opacity 100ms;
+  transition: opacity 200ms;
 }
 .like .liked {
   opacity: 0;

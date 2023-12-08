@@ -147,11 +147,11 @@ main {
   height: 160px;
   object-fit: cover;
 }
-.card > div {
+.card > article {
   padding: 15px;
   justify-content: space-between;
 }
-.card > div > div {
+.card > article > div {
   gap: 8px;
 }
 
